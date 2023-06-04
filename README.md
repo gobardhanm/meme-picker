@@ -38,6 +38,36 @@
             console.log(emojis.includes('🐴'))
             
             > Here it will log out true or false according to the statement.
+
+    > event.target.id : (To know where did the click came from ?)
+
+        Ex: 
+            container.addEventListener('click', function(e){
+                console.log(e.target.id)
+            })
+
+            Here the "e" is an object and we are accessing the "target.id" in that object.
+
+    > .parentElement : (Accessing the parent when you know the children)
+
+        Ex: 
+            container.addEventListener('click', function(e){
+                document.getElementById(e.target.id).parentElement.style.backgroundColor = 'lightblue'
+            })
+
+            - Here we are accessing the parent element of that targeted id using ".parentElement" on that id.
+
+    > classList add/remove:
+
+        Ex: document.getElementById(e.target.id).parentElement.classList.add('read')
+            document.getElementById(e.target.id).parentElement.classList.remove('unread')
+
+            -Here we are adding/ removing a class in a element by targetting it's id and using "classList.add("class")/classList.remove("class").
+
+    > getElementByClassName (Grabbing all elements with a given class with one line of code ):
+
+        
+
 # HTML
     > Radio Inputs
         
@@ -64,3 +94,7 @@
           - "for" in the label used for selecting the radio by clicking on the label 
 
 # CSS
+
+    > The property which change the color of the input radio button:
+
+        accent-color: #bd301d; 
