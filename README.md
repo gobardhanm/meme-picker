@@ -66,6 +66,38 @@
 
     > getElementByClassName (Grabbing all elements with a given class with one line of code ):
 
+        Ex:
+            const productsArray = document.getElementsByClassName("product")
+            for (let product of productsArray){
+                product.classList.remove("purchased")
+                product.classList.add("on-offer")
+            }
+
+        - Here the "getElemetnsByClassName" will get the element with the given class name.
+
+    > querySelector (A more powerful way of grabbing  elements)
+
+        Ex:  
+            submitBtn.addEventListener('click', function(){
+                const quaryRadio = document.querySelector('input[type="radio"]:checked')
+                console.log(quaryRadio.value)
+            })
+
+    > checking if "checkbox" is checked or not:
+
+        Ex: 
+            continueBtn.addEventListener('click', function(){
+  
+                if (acceptTerms.checked){
+                    console.log("Terms accepted!")    
+                }
+                else{
+                    console.log("Terms refused!")         
+                }
+            })
+
+            - ".checked" will check if "cheackbox" is cheacked or not.
+
         
 
 # HTML
