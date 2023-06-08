@@ -97,6 +97,40 @@
             })
 
             - ".checked" will check if "cheackbox" is cheacked or not.
+            - "acceptTerms" is the control of that checkbox.
+
+    > .filter() : (Getting only the elements we want from an array)
+
+        - will return true or false after filtering through the whole array
+        
+        Ex: 
+            const ages = [1, 5, 9, 23, 56, 10, 47, 70, 10, 19, 23, 18]
+
+            const adults = ages.filter(function(age){
+                return age >= 18
+            })
+
+            console.log(adults)
+
+            const children = ages.filter(function(age){
+                return age < 18
+            })
+
+            console.log(children)
+
+        Ex.2 :
+            const thrillersSeries = series.filter(function(genre){
+            return genre.genres.includes("thriller")
+            })
+
+            console.log(thrillersSeries)
+
+    > ** We can use "logical and" in the return statement
+
+        - return cat.emotionTags.includes(selectedEmotion) && cat.isGif
+        
+
+    >  
 
         
 
